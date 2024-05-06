@@ -1,0 +1,37 @@
+.rightSelect {
+    width: 350px;
+    position: absolute;
+    right: 400px;
+    top: 35px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSelect select {
+    /* width: 100%; */
+    border: 2px solid rgb(26, 26, 26);
+    background-color: rgb(48, 48, 48);
+    outline: none;
+    cursor: pointer;
+    color: white;
+    padding: 3px 0;
+    padding-left: 2px;
+    font-size: 8pt;
+}
+
+.rightSelect li {
+    cursor: pointer;
+    width: 100%;
+    font-size: 8pt;
+    line-height: 24px;
+}
+
+.rightSelect li span {
+    display: block;
+}
+
+.rightSelect li:nth-child(2),
+.rightSelect li:nth-child(3) {
+    padding-left: 15px;
+}

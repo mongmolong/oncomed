@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faAngleRight, faAngleLeft, faFileMedical, faMicroscope } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faAngleLeft, faFileMedical, faMicroscope } from "@fortawesome/free-solid-svg-icons";
 import '../../styles/SubRobustStyle.css';
 
 function Robust(props) {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEye, faCaretDown, faGear, faCalculator, faStethoscope } from "@fortawesome/free-solid-svg-icons";
+import { faCaretDown, faGear, faCalculator, faStethoscope } from "@fortawesome/free-solid-svg-icons";
 import '../../styles/SubProtonStyle.css';
 
 

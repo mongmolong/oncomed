@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+}
+
+.mainMenu {
+    width: 1280px;
+    height: 26px;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 8pt;
+    letter-spacing: 0.5px;
+}
+
+.mainMenu li{
+    /* padding: 5px 6px; */
+    float: left;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.mainMenu li a{
+    padding: 5px 6px;
+    border: 1px solid transparent;
+}
+
+.mainMenu .mainFirst {
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+.mainMenu .mainQa {
+    border-right: 1px solid rgb(56, 56, 56);
+    border-left: 1px solid rgb(56, 56, 56);
+}
+
+.mainMenu li:hover a,
+.mainMenu .mainMenuOn {
+    border: 1px solid orange;
+    border-radius: 5px 5px 0 0;
+}

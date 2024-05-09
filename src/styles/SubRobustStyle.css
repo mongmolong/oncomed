@@ -1,0 +1,184 @@
+.icons {
+    font-size: 17pt;
+}
+
+
+/* .subConTab .subRobustList  */
+.subRobust {
+    width: 1280px;
+    display: flex;
+    background-color: rgba(207, 207, 207, 0.096);
+    padding: 5px 1px;
+    padding-left: 3px;
+}
+
+/* subRobustList */
+.subRobustList {
+    font-size: 7.7pt;
+    letter-spacing: 0.3px;
+    padding: 5px 1px;
+    position: relative;
+    text-align: center;
+}
+
+.subRobust div h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    letter-spacing: 0.5px;
+}
+
+.subRobust div.subRobustList>div {
+    height: 65px;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.subRobust div p span {
+    display: inline-block;
+    padding: 0 0.3em;
+    cursor: pointer;
+}
+
+/* scenario */
+.subRobust div.scenario {
+    width: 23%;
+}
+
+.subRobust div div span {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.robustSmall .scenarioSelect {
+    width: 80%;
+    padding: 3px 0;
+    margin-left: 1px;
+    text-align: left;
+}
+
+.robustSmall>div select {
+    border: 2px solid rgb(26, 26, 26);
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+.robustSmall p {
+    text-align: center;
+}
+
+.robustSmall p.robustIconOn span:nth-child(2) {
+    /* font-weight: 550; */
+}
+
+.robustSmall p.forIconHover:hover span:nth-child(1),
+.robustSmall p.robustIconOn span:nth-child(1) {
+    color: orange;
+}
+
+/* dose */
+.subRobust div.dose {
+    width: 13%;
+    border-left: 1px solid rgb(56, 56, 56);
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+.subRobust div.dose>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subRobust div.dose div span{
+    padding: 0 5px;
+
+}
+.subRobust div.dose div span:nth-child(1) {
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+/* inspector */
+.subRobust div.inspector {
+    width: 5%;
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+/* currentScenario */
+.subRobust div.prescrip {
+    width: 11%;
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+.subRobust div.prescrip div>p {
+    width: 100%;
+    /* height: 80px; */
+    border: 0.5px solid rgb(56, 56, 56);
+    text-align: left;
+
+}
+
+.subRobust div.prescrip div p span:nth-child(1) {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    margin-bottom: 2px;
+    padding: 2px 1px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.subRobust div.prescrip div p .prescripSpan {
+    color: gray;
+}
+
+/* currentScenario */
+.subRobust div.currentScenario {
+    width: 26%;
+    border-right: 1px solid rgb(56, 56, 56);
+    position: relative;
+}
+
+.subRobust div.currentScenario div>div>p {
+    padding-left: 8px;
+}
+
+.subRobust div.currentScenario div div .scenarioEx{
+    margin-top: 5px;
+}
+.subRobust div.currentScenario div div .scenarioEx p {
+    text-align: left;
+    color: gray;
+}
+
+/* currentArrow */
+.subRobust div.currentScenario div .currentArrow {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.subRobust div.currentScenario div .currentArrow span:nth-child(1):hover {
+    color: orange;
+    border: 2px solid orange;
+}
+
+.subRobust div.currentScenario div .currentArrow span:nth-child(1) {
+    border-radius: 50%;
+    width: 20px;
+    height: 25px;
+    border: 2px solid gray;
+
+    line-height: 25px;
+    font-size: 10pt;
+}

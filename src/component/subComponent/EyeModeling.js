@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faCube, faCaretDown, faDisplay,faMagnifyingGlass, faGear } from "@fortawesome/free-solid-svg-icons";
-import '../../styles/SubPlanStyle.css';
+import '../../styles/SubModelingStyle.css';
 
 
 function EyeModeling(props) {
     const [selectedIndex, setSelectedIndex] = useState(null);
-
     function eyeToggle(index) {
         setSelectedIndex(index);
     }
@@ -104,7 +103,7 @@ function EyeModeling(props) {
                     </p>
                     <div className="tumorOption">
                         <select>
-                            <option value="sample0"></option>
+                            <option value="sample0">&nbsp;</option>
                             <option value="sample1">sample1</option>
                             <option value="sample2">sample2</option>
                             <option value="sample3">sample3</option>
@@ -130,7 +129,7 @@ function EyeModeling(props) {
                     </p>
                     <div className="poiOption">
                         <select>
-                            <option value="sample0"></option>
+                            <option value="sample0">&nbsp;</option>
                             <option value="sample1">sample1</option>
                             <option value="sample2">sample2</option>
                             <option value="sample3">sample3</option>
@@ -161,7 +160,6 @@ function EyeModeling(props) {
                 <h5></h5>
             </div>
         </>
-
     )
 }
 

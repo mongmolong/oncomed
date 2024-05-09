@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import EyeModeling from './subComponent/EyeModeling';
+import  EyeModeling from '../subComponent/EyeModeling';
+import '../../styles/SubModelingStyle.css';
 
-import '../styles/SubPlanStyle.css';
-
-function SubPlan(props) {
+function SubModeling(props) {
 
     const [eyeToggle, setEyeToggle] = useState(1);
     const eyeTab = (index) => {
@@ -28,4 +27,4 @@ function SubPlan(props) {
     );
 };
 
-export default SubPlan;
+export default SubModeling;

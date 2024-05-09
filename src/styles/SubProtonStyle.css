@@ -1,0 +1,162 @@
+.proton {
+    width: 1280px;
+    display: flex;
+    background-color: rgba(207, 207, 207, 0.096);
+    padding: 5px 1px;
+}
+
+.proton>div {
+    font-size: 7.7pt;
+    letter-spacing: 0.3px;
+    padding: 5px 1px;
+    position: relative;
+    text-align: center;
+}
+
+.proton div h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    letter-spacing: 0.5px;
+}
+
+.proton>div>div {
+    padding-bottom: 5px;
+    display: flex;
+    height: 65px;
+}
+
+.proton div div p.forIconHover:hover span:nth-child(1) span.icons,
+.proton .foricon div p.forIconHover:hover span:nth-child(1),
+.proton .foricon div p.protonIconOn span:nth-child(1),
+.proton .planSetUp .protonSmall p.protonIconOn span span:nth-child(1) {
+    color: rgb(48, 194, 194);
+}
+.proton .foricon div p.protonIconOn span:nth-child(2) ,
+.proton .planSetUp .protonSmall p.protonIconOn span span:nth-child(2) {
+    font-weight: 550;
+}
+
+
+.proton div p span {
+    display: inline-block;
+    padding: 0 0.3em;
+    cursor: pointer;
+}
+
+/* planSetUp */
+.proton .planSetUp {
+    width: 5%;
+}
+
+.proton .planSetUp p {
+    display: flex;
+}
+
+.proton .planSetUp p span.planDrop {
+    font-size: 8pt;
+    margin-top: 36px;
+    margin-left: -7px;
+    display: inline-block;
+}
+
+/* treatProject */
+.proton .treatProject {
+    width: 7%;
+    border-right: 1px solid rgb(56, 56, 56);
+    border-left: 1px solid rgb(56, 56, 56);
+}
+
+/* isocenter */
+.proton .isocenter {
+    width: 10.5%;
+    text-align: left;
+}
+
+.proton .isocenter div p span {
+    margin-bottom: 5px;
+}
+
+/* drr */
+.proton .drr {
+    width: 4%;
+}
+.proton .drr .protonSmall p span:nth-child(1){
+    border: 0.5px solid transparent;
+
+}
+.proton .drr .protonSmall p.protonIconOn span:nth-child(1){
+    border: 0.5px solid orange;
+}
+
+
+/* beam */
+.proton .beam {
+    width: 9%;
+    text-align: left;
+    margin-bottom: 5px;
+    border-right: 1px solid rgb(56, 56, 56);
+    border-left: 1px solid rgb(56, 56, 56);
+}
+
+.proton .beam div p span {
+    margin-bottom: 5px;
+}
+
+
+/* dose */
+.proton .dose {
+    width: 13%;
+    border-right: 1px solid rgb(56, 56, 56);
+    border-left: 1px solid rgb(56, 56, 56);
+}
+
+.proton .dose p.doseIconOn span:nth-child(1) {
+    color: rgb(218, 255, 54);
+}
+
+.proton .dose div div p {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+/* autoScale */
+.proton .autoScale {
+    width: 20%;
+}
+
+.proton .autoScale>div>p {
+    border-right: 1px solid rgb(56, 56, 56);
+    width: 70%;
+}
+
+/* autoScaleRight */
+.proton .autoScale .autoScaleRight {
+    padding: 1px 2px;
+}
+
+.proton .autoScale div .autoScaleRight>p {
+    width: 100%;
+    height: 60px;
+    border: 0.5px solid rgb(56, 56, 56);
+    text-align: left;
+}
+
+.proton .autoScale div .autoScaleRight>p span:nth-child(1) {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+    margin-bottom: 2px;
+    padding: 2px 1px;
+    box-sizing: border-box;
+}
+
+.proton .autoScale div .autoScaleRight p span.scaleSpan {
+    text-align: left;
+    color: gray;
+}

@@ -18,10 +18,10 @@ import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <>
-      {/* <MainMenu /> */}
       <NavBar />
       <div className="container">
         <Routes>
+          <Route path="/" element={<AutomatedPlanning />}></Route>
           <Route path="/automatedPlanning" element={<AutomatedPlanning />}></Route>
           <Route path="/patientData" element={<PatientData />}></Route>
           <Route path="/patientModeling" element={<PatientModeling />}></Route>
@@ -29,13 +29,13 @@ function App() {
           <Route path="/planOptimization" element={<PlanOptimization />}></Route>
           <Route path="/planEvaluation" element={<PlanEvaluation />}></Route>
           <Route path="/qa" element={<Qa />}></Route>
-          <Route path="/treatMent" element={<TreatMent />}></Route>         
+          <Route path="/treatMent" element={<TreatMent />}></Route>
         </Routes>
       </div>
 
       <div className="appDiv">
         <img src={oncomed} />
-       </div>
+      </div>
     </>
 
   );

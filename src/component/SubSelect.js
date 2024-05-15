@@ -8,9 +8,9 @@ function SubSelect(props) {
         <ul className="rightSelect">
             <li>
                 <select>
-                    <option><FontAwesomeIcon icon={faDisplay} />&nbsp; 1 PROSTATE</option>
-                    <option><FontAwesomeIcon icon={faDisplay} />&nbsp; 2 sample</option>
-                    <option><FontAwesomeIcon icon={faDisplay} />&nbsp; 3 sample</option>
+                    <option>&nbsp; 1 PROSTATE</option>
+                    <option>&nbsp; 2 sample</option>
+                    <option>&nbsp; 3 sample</option>
                 </select>
             </li>
             <li><FontAwesomeIcon icon={faDisplay} />&nbsp; RNSH</li>

@@ -1,0 +1,12 @@
+.bottomContainer {
+    width: 1620px;
+    height: 740px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+}
+
+.bottomImages {
+    width: 100%;
+}

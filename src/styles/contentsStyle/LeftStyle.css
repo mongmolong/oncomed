@@ -1,0 +1,210 @@
+.sliderContainer {
+    width: 330px;
+    height: 100%;
+    margin-right: 5px;
+    font-size: 9pt;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.sliderContainer.slideOn>div {
+    display: none;
+}
+
+.sliderContainer.slideOn {
+    width: 32px;
+    transition: all 0.2s;
+}
+
+
+
+/* leftMenus */
+.sliderContainer .leftMenus {
+    height: 30px;
+    /* background-color: green; */
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    left: -183px;
+    top: 211px;
+}
+
+.sliderContainer ul li {
+    padding: 3px 20px;
+    cursor: pointer;
+}
+
+.sliderContainer ul li:hover,
+.sliderContainer ul li.leftTabOn {
+    background-color: rgba(207, 207, 207, 0.096);
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* ------------------------------- */
+
+.sliderContainer>div {
+    width: 88%;
+    height: 100%;
+    position: absolute;
+    left: 32px;
+    top: 0;
+    background-color: rgb(54, 54, 54);
+}
+
+/* -----------------토글버튼 */
+.sliderContainer>p {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    padding-left: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.sliderContainer div .leftTabs {
+    display: none;
+}
+
+.sliderContainer div .leftTabs.onTab {
+    display: block;
+}
+
+.sliderContainer div div .subContentName {
+    display: flex;
+    background-color: rgba(207, 207, 207, 0.096);
+    /* background-color: rgb(37, 37, 37); */
+    padding: 3px;
+}
+
+.sliderContainer div div .subContentName p {
+    border-right: 1px solid gray;
+    width: 10%;
+    padding: 3px;
+    font-size: 8pt;
+}
+
+.sliderContainer div div .subContentName p:nth-child(3) {
+    width: 80%;
+}
+
+/* subWrapper */
+.subWrapper {
+    margin-top: 1px;
+    transition: all 0.3s;
+}
+
+
+
+.subWrapper .subWrapperList {
+    width: 100%;
+}
+
+
+.subWrapper .subWrapperList tbody {
+    position: relative;
+}
+
+.subWrapper .subWrapperList tbody tr {
+    display: flex;
+    font-size: 8pt;
+}
+
+.subWrapper .subWrapperList tbody tr td {
+    cursor: pointer;
+}
+
+.subWrapper .subWrapperList tbody .subWrapperName {
+    /* 얘를 눌렀을때! */
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    cursor: pointer;
+}
+
+.subWrapper.subActive {
+    height: 26px;
+    overflow: hidden;
+}
+
+.subWrapper .subWrapperList tbody .subWrapperName td:nth-child(2) {
+    width: 100%;
+}
+
+.subWrapper.subActive .subWrapperList tbody .subWrapperName td:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.subWrapper .subWrapperList tbody .subWrapperName td {
+    border: 0.5px solid transparent;
+    background-color: rgb(54, 54, 54);
+}
+
+.subWrapper .subWrapperList tbody tr .starTab {
+    text-align: center;
+}
+
+.subWrapper .subWrapperList tbody tr td {
+    border: 0.5px solid rgb(49, 49, 49);
+    padding: 3px 5px;
+    border-collapse: collapse;
+    background-color: rgb(36, 36, 36);
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube {
+    width: 60%;
+}
+
+.subWrapper .subWrapperList tbody tr td:nth-child(4) {
+    width: 13%;
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube {
+    position: relative;
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube span {
+    display: inline-block;
+    background-color: yellow;
+    height: 8px;
+    width: 8px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube.cubeActive::after {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube.cubeActive span::after {
+    content: "";
+    display: block;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    position: absolute;
+    top: 3px;
+    left: 3.5px;
+}
+
+.subWrapper .subWrapperList tbody tr .colorCube.cubeActive {
+    color: rgb(85, 248, 85);
+}

@@ -12,7 +12,7 @@ function EyeModeling(props) {
 
     return (
         <>
-            <div className="subEyeList workSpace">
+            <div key={1} className="subEyeList workSpace">
                 <div className="eyeSmall">
                     <p className={`eyeIcons${selectedIndex === 0 ? ' iconOn' : ''}`} onClick={() => eyeToggle(0)}>
                         <span className="icons"><FontAwesomeIcon icon={faEye} /></span>
@@ -25,7 +25,7 @@ function EyeModeling(props) {
                 </div>
                 <h5>WORKSPACE LAYOUT</h5>
             </div>
-            <div className="subEyeList layout">
+            <div key={2}  className="subEyeList layout">
                 <div className="eyeSmall eyeSelect">
                     <p className={`eyeIcons${selectedIndex === 3 ? ' iconOn' : ''}`} onClick={() => eyeToggle(3)}>
                         <span className="icons">
@@ -37,7 +37,7 @@ function EyeModeling(props) {
                 </div>
                 <h5></h5>
             </div>
-            <div className="subEyeList eyeModel">
+            <div key={3}  className="subEyeList eyeModel">
                 <div className="eyeSmall">
                     <p className={`eyeIcons newModel ${selectedIndex === 4 ? ' iconOn' : ''}`} onClick={() => eyeToggle(4)}>
                         <span className="icons"><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
@@ -59,8 +59,7 @@ function EyeModeling(props) {
                 </div>
                 <h5>EYE MODEL</h5>
             </div>
-
-            <div className="subEyeList eyeTransform">
+            <div key={4}  className="subEyeList eyeTransform">
                 <div>
                     <div className="transIcons">
                         <span><FontAwesomeIcon icon={faGear} /> Translate</span>
@@ -95,7 +94,7 @@ function EyeModeling(props) {
                 </div>
                 <h5>EYE TRANSFORM</h5>
             </div>
-            <div className="subEyeList tumorModeling">
+            <div key={5}  className="subEyeList tumorModeling">
                 <div className="eyeSmall">
                     <p className={`eyeIcons eyeTumor ${selectedIndex === 5 ? ' iconOn' : ''}`} onClick={() => eyeToggle(5)}>
                         <span className="icons"><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
@@ -121,7 +120,7 @@ function EyeModeling(props) {
                 </div>
                 <h5>TUMOR MODELING</h5>
             </div>
-            <div className="subEyeList markerPois">
+            <div key={6}  className="subEyeList markerPois">
                 <div className="eyeSmall">
                     <p className={`eyeIcons eyeTumor ${selectedIndex === 6 ? ' iconOn' : ''}`} onClick={() => eyeToggle(6)}>
                         <span className="icons"><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
@@ -147,7 +146,7 @@ function EyeModeling(props) {
                 </div>
                 <h5>MARKER POIS</h5>
             </div>
-            <div className="subEyeList eyeLast">
+            <div key={7}  className="subEyeList eyeLast">
                 <div className="eyeSmall">
                     <p className={`eyeIcons icons ${selectedIndex === 8 ? ' iconOn' : ''}`} onClick={() => eyeToggle(8)}>
                         <span className="icons">

@@ -38,7 +38,7 @@
 /* eyeLists */
 .planSub ul.eyeContents {
     width: 94%;
-    height: 100px;
+    /* height: 100px; */
 }
 
 .planSub ul.eyeContents li {

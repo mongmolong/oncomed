@@ -1,8 +1,8 @@
 .rightSelect {
     width: 400px;
     position: absolute;
-    right: 390px;
-    top: 35px;
+    left: 1400px;
+    top: 40px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;

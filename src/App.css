@@ -12,7 +12,28 @@ body {
   color: rgb(241, 241, 241);
 }
 
-.appDiv {
-  text-align: center;
-  padding: 50px 0;
+.topMenu {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.topMenu .topMain {
+  width: 1620px;
+  margin: 0 auto;
+
+}
+
+.subContainer {
+  width: 1620px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.personIdCard {
+  width: 300px;
+}
+
+.container {
+  width: 1580px;
 }

@@ -3,22 +3,31 @@ a {
     color: rgb(241, 241, 241);
 }
 
+.nav {
+    margin-top: 15px;
+    display: flex;
+}
+
+.nav .idNumber {
+    width: 330px;
+    font-size: 10pt;
+    display: flex;
+}
+
 .mainMenu {
     width: 1280px;
-    height: 26px;
-    margin: 0 auto;
-    margin-top: 5px;
+    height: 22px;
     font-size: 8pt;
     letter-spacing: 0.5px;
 }
 
-.mainMenu li{
-    /* padding: 5px 6px; */
+.mainMenu li {
     float: left;
     cursor: pointer;
     border: 1px solid transparent;
 }
-.mainMenu li a{
+
+.mainMenu li a {
     padding: 5px 6px;
     border: 1px solid transparent;
 }

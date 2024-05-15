@@ -1,0 +1,182 @@
+.icons {
+    font-size: 17pt;
+}
+
+/* -------------------------------------------------------------- */
+.roi {
+    padding: 0px 5px;
+    position: relative;
+    border-right: 1px solid rgb(56, 56, 56);
+}
+
+.roi h5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.2em 0;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    letter-spacing: 0.5px;
+}
+
+/* roiSmall */
+.roi .roiSmall {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.roi .roiSmall p:hover,
+.roi .roiSmall p.iconOn {
+    border: 1px solid orange;
+    background-color: rgb(27, 27, 27);
+}
+
+.roi div p {
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.roi div p span {
+    display: inline-block;
+    padding: 0 0.3em;
+    cursor: pointer;
+}
+
+/* roiLayout */
+.roi .roiLayout {
+    /* width: 5%; */
+}
+
+.roi .roiLayout p {
+    display: flex;
+}
+
+.roi .roiLayout p span.eyeDrop {
+    font-size: 8pt;
+    margin-top: 36px;
+    margin-left: -7px;
+    display: inline-block;
+}
+
+.roi p span:nth-child(2),
+.roi .roiLayout p span:nth-child(2) {
+    font-size: 7.7pt;
+}
+
+
+/* roiCurrent */
+.roiCurrent {
+    width: 19%;
+    /* padding: 0 4px; */
+}
+
+.roiCurrent .roiSmall .roiOption {
+    width: 100%;
+}
+
+.roiCurrent .roiSmall .roiOption select {
+    border: 2px solid rgb(26, 26, 26);
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.roiCurrent .roiSmall .roiOption div span {
+    color: gray;
+    font-size: 10pt;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* roiCon */
+.roiCon {
+    width: 21%;
+}
+
+.roiCon .roiSmall div div:nth-child(1) {
+    width: 155%;
+}
+
+.roiExtra .roiSmall .leftExtra,
+.roiCon .roiSmall .transIcons {
+    display: flex;
+}
+
+.roi .roiSmall .transIcons div {
+    text-align: left;
+}
+
+.roiExtra .roiSmall .transIcons span,
+.roi .roiSmall .transIcons div span {
+    display: inline-block;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+
+/* roiInter */
+.roiInter {
+    width: 13%;
+}
+
+.roiInter .roiSmall .transIcons span {
+    display: inline-block;
+}
+
+
+/* roi3d */
+.roi3d {
+    width: 29%;
+}
+
+.roi3d .roiSmall {
+    display: flex;
+}
+
+.roi3d .roiSmall .center {
+    width: 125%;
+    display: flex;
+    border-left: 1px solid rgb(56, 56, 56);
+    border-right: 1px solid rgb(56, 56, 56);
+    padding: 0 3px;
+}
+
+.roi3d .roiSmall .center p:nth-child(2):hover {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+
+.roi3d .roiSmall .center p:nth-child(2) span {
+    /* text-align: left; 이거 안먹혀서 아래 float로 해야함!*/
+    float: left;
+}
+
+.roi3d .roiSmall div span {
+    display: inline-block;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+/* roiExtra */
+.roiExtra {
+    width: 55%;
+}
+.roiExtra .roiSmall .centerExtra {
+    border-left: 1px solid rgb(56, 56, 56);
+    border-right: 1px solid rgb(56, 56, 56);
+    padding-left: 5px;
+}
+
+.roiExtra .roiSmall>p {
+    width: 48%;
+
+}

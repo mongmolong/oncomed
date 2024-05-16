@@ -68,11 +68,103 @@
     font-size: 7.7pt;
 }
 
+/* roiSelect */
+.roiSelect .roiSelectLayout {
+    width: 180px;
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(90, 90, 90);
+    position: absolute;
+    top: 62px;
+    left: 5px;
+    padding: 3px 5px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+.roiSelect .roiSelectLayout.boxOn {  
+    display: block;
+}
+.roiSelect .roiSelectLayout>div.boxActive p,
+.roiSelect .roiSelectLayout>div.boxActive div p,
+.roiSelect .roiSelectLayout>div:hover div p,
+.roiSelect .roiSelectLayout>div:hover p {
+    border: 2px solid orange;
+}
+
+.roiSelect .roiSelectLayout .first,
+.roiSelect .roiSelectLayout .second {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.roiSelect .roiSelectLayout .first>p {
+    width: 50%;
+    border: 2px solid green;
+    font-size: 11pt;
+    line-height: 75px;
+}
+
+.roiSelect .roiSelectLayout .second p,
+.roiSelect .roiSelectLayout .first div>p {
+    border: 2px solid green;
+    box-sizing: border-box;
+    width: 100%;
+    height: 49%;
+    font-size: 11pt;
+    margin: 0 1.5px;
+    line-height: 35px;
+}
+
+.roiSelect .roiSelectLayout .first div>p:nth-child(2) {
+    margin-top: 1.5px;
+}
+
+.roiSelect .roiSelectLayout .first>div {
+    width: 50%;
+}
+
+/* second */
+.roiSelect .roiSelectLayout>.second {
+    margin: 13px 0;
+    box-sizing: border-box;
+}
+
+.roiSelect .roiSelectLayout .second p {
+    height: 100%;
+    line-height: 80px;
+    font-size: 8pt;
+}
+
+/* third */
+.roiSelect .roiSelectLayout .third {
+    width: 100%;
+    height: 85px;
+    box-sizing: border-box;
+}
+
+.roiSelect .roiSelectLayout .third p {
+    border: 2px solid green;
+    width: 31.6%;
+    height: 50%;
+    font-size: 8pt;
+    float: left;
+    margin: 1.5px;
+    /* padding: 4px 2px; */
+    padding: 3px 2px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.roiSelect .roiSelectLayout .third p span:nth-child(1) {
+    font-size: 7pt;
+}
+
 
 /* roiCurrent */
 .roiCurrent {
     width: 19%;
-    /* padding: 0 4px; */
 }
 
 .roiCurrent .roiSmall .roiOption {
@@ -170,6 +262,7 @@
 .roiExtra {
     width: 55%;
 }
+
 .roiExtra .roiSmall .centerExtra {
     border-left: 1px solid rgb(56, 56, 56);
     border-right: 1px solid rgb(56, 56, 56);

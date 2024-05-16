@@ -13,7 +13,7 @@ function LeftSlide(props) {
         setLiToggle(index);
     };
 
-        // 왼쪽 슬라이드
+    // 왼쪽 슬라이드
     const [isSlideOn, setIsSlideOn] = useState(false);
     const toggleIcon = () => {
         setIsSlideOn(!isSlideOn);
@@ -26,10 +26,10 @@ function LeftSlide(props) {
         "sample",
         "sample",
     ];
-    const reversedLeftNames = leftNames.slice().reverse();  
+    const reversedLeftNames = leftNames.slice().reverse();
 
     const leftTabsContent = [
-        { name: "ROIS", content: <><SlideListsCopy/><SlideListsCopy /></> },
+        { name: "ROIS", content: <><SlideListsCopy /><SlideLists /></> },
         { name: "POIS", content: <><SlideListsCopy /><SlideListsCopy /></> },
         { name: "Registrations", content: <h1>Registrations </h1> },
         { name: "Sample 1", content: <h1>Sample 1</h1> },
@@ -41,7 +41,7 @@ function LeftSlide(props) {
             <div className={`sliderContainer ${isSlideOn ? 'slideOn' : ''}`}>
                 <p onClick={toggleIcon}>
                     <FontAwesomeIcon icon={isSlideOn ? faCaretLeft : faCaretRight} />
-                </p>
+                </p>              
                 <ul className="leftMenus">
                     {reversedLeftNames.map((leftName, index) => (
                         <li key={index}
@@ -62,6 +62,7 @@ function LeftSlide(props) {
                         </div>
                     ))}
                 </div>
+                <p className="write"><span>Showing geometry status for: </span>&nbsp;CT 1</p>
             </div>
         </>
     );

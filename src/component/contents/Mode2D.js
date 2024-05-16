@@ -4,6 +4,7 @@ import ImgTabs from '../subComponent/ImgTabs';
 
 function Mode2D(props) {
     return (
+        <>
         <div className="everyimages">
             <div className="leftImage tabs">
                 <ImgTabs />
@@ -17,6 +18,7 @@ function Mode2D(props) {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 

@@ -50,7 +50,8 @@ function SlideListsCopy(props) {
                     <tr className="subWrapperName" onClick={toggleIcon2}>
                         <td><FontAwesomeIcon icon={faEye} /></td>
                         <td onClick={handleToggle}>
-                            <FontAwesomeIcon icon={isUpOn ? faSortUp : faSortDown} /> Targets({number})
+                            <FontAwesomeIcon icon={isUpOn ? faSortUp : faSortDown} /> 
+                            Targets(3)
                         </td>
                     </tr>
                     {trLists.map((trtr, index) => (

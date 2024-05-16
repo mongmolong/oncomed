@@ -22,7 +22,6 @@
 /* leftMenus */
 .sliderContainer .leftMenus {
     height: 30px;
-    /* background-color: green; */
     transform: rotate(-90deg);
     display: flex;
     position: absolute;
@@ -45,13 +44,26 @@
 /* ------------------------------- */
 
 .sliderContainer>div {
-    width: 88%;
-    height: 100%;
+    width: 85%;
+    height: 80%;
     position: absolute;
     left: 32px;
     top: 0;
     background-color: rgb(54, 54, 54);
 }
+
+.sliderContainer .write {
+    width: 100%;
+    position: absolute;
+    top: 597px;
+    left: 22px;
+}
+
+.sliderContainer .write span {
+    font-size: 8pt;
+    color: rgb(126, 126, 126);
+}
+
 
 /* -----------------토글버튼 */
 .sliderContainer>p {
@@ -62,6 +74,10 @@
     padding-left: 12px;
     width: 20px;
     height: 20px;
+}
+
+.sliderContainer div {
+    overflow-y: auto;
 }
 
 .sliderContainer div .leftTabs {
@@ -95,8 +111,6 @@
     margin-top: 1px;
     transition: all 0.3s;
 }
-
-
 
 .subWrapper .subWrapperList {
     width: 100%;
@@ -191,7 +205,7 @@
     border: 1px solid white;
     position: absolute;
     top: 3px;
-    left: 2px;
+    left: 3px;
 }
 
 .subWrapper .subWrapperList tbody tr .colorCube.cubeActive span::after {

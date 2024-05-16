@@ -5,15 +5,22 @@ import '../../styles/SubStructureStyle.css';
 
 
 function Structure(props) {
+    // 레이아웃박스
+    const [isBoxOn, setIsBoxOn] = useState(false);
+    const roiSmallClick = () => {
+        setIsBoxOn(prevState => !prevState);
+    };
+
     const [selectedIndex, setSelectedIndex] = useState(null);
     function eyeToggle(index) {
         setSelectedIndex(index);
     }
+    
 
     return (
         <>
-            <div key={1} className="roi ">
-                <div className="roiSmall roiLayout">
+            <div key={1} className="roi roiSelect" onClick={roiSmallClick}>
+                <div className="roiSmall roiLayout" >
                     <p className={`eyeIcons${selectedIndex === 0 ? ' iconOn' : ''}`} onClick={() => eyeToggle(0)}>
                         <span className="icons">
                             <FontAwesomeIcon icon={faDisplay} />
@@ -23,6 +30,45 @@ function Structure(props) {
                     </p>
                 </div>
                 <h5></h5>
+                <div className={`roiSelectLayout${isBoxOn ? ' boxOn' : ''}`}>
+                    <div className="first" >
+                        <p>T</p>
+                        <div>
+                            <p>S</p>
+                            <p>C</p>
+                        </div>
+                    </div>
+                    <div className="second">
+                        <p>Primary</p>
+                        <p>Secondary</p>
+                    </div>
+                    <div className="third">
+                        <p>
+                            <span>Primary</span>
+                            <span>T</span>
+                        </p>
+                        <p>
+                            <span>Primary</span>
+                            <span>S</span>
+                        </p>
+                        <p>
+                            <span>Primary</span>
+                            <span>C</span>
+                        </p>
+                        <p>
+                            <span>Secondary</span>
+                            <span>T</span>
+                        </p>
+                        <p>
+                            <span>Secondary</span>
+                            <span>S</span>
+                        </p>
+                        <p>
+                            <span>Secondary</span>
+                            <span>C</span>
+                        </p>
+                    </div>
+                </div>
             </div>
             <div key={2} className="roi">
                 <div className="roiSmall roiLayout">
@@ -47,11 +93,11 @@ function Structure(props) {
                         </select>
                         <div>
                             <span><FontAwesomeIcon icon={faCheck} /></span>
+                            <span><FontAwesomeIcon icon={faGear} /></span>
                             <span><FontAwesomeIcon icon={faCheck} /></span>
+                            <span><FontAwesomeIcon icon={faGear} /></span>
                             <span><FontAwesomeIcon icon={faCheck} /></span>
-                            <span><FontAwesomeIcon icon={faCheck} /></span>
-                            <span><FontAwesomeIcon icon={faCheck} /></span>
-                            <span><FontAwesomeIcon icon={faCheck} /></span>
+                            <span><FontAwesomeIcon icon={faGear} /></span>
                         </div>
                     </div>
                 </div>
@@ -132,7 +178,7 @@ function Structure(props) {
                     </div>
                     <p className={`eyeIcons ${selectedIndex === 4 ? ' iconOn' : ''}`} onClick={() => eyeToggle(4)}>
                         <span className="icons"><FontAwesomeIcon icon={faMagnifyingGlass} /></span>
-                        <span>Move to slice <br/>intersection </span>
+                        <span>Move to slice <br />intersection </span>
                     </p>
                 </div>
                 <h5>EXTRAS</h5>
